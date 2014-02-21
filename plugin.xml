@@ -20,7 +20,7 @@
         <!-- Cordova >= 2.8 -->
         <config-file target="config.xml" parent="/*">
             <feature name="OwnPassBarcodeScanner">
-                <param name="ios-package" value="CDVBarcodeScanner" />
+                <param name="ios-package" value="CDVOwnPassBarcodeScanner" />
             </feature>
         </config-file>
 

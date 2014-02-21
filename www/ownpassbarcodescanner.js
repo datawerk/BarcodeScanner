@@ -82,6 +82,6 @@
             ]);
         };
 
-        var OwnPassBarcodeScanner = new OwnPassBarcodeScanner();
-        module.exports = OwnPassBarcodeScanner;
+        var ownPassBarcodeScanner = new OwnPassBarcodeScanner();
+        module.exports = ownPassBarcodeScanner;
 

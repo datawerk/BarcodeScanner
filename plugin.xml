@@ -3,23 +3,23 @@
     id="com.phonegap.plugins.barcodescanner"
     version="1.0.1">
 
-    <name>BarcodeScanner</name>
-    <description>Scans Barcodes.</description>
+    <name>ownPassBarcodeScanner</name>
+    <description>Scans Barcodes for ownPass</description>
     <license>MIT</license>
 
     <engines>
         <engine name="cordova" version=">=3.0.0" />
     </engines>    
 
-    <js-module src="www/barcodescanner.js" name="BarcodeScanner">
-        <clobbers target="cordova.plugins.barcodeScanner" />
+    <js-module src="www/ownpassbarcodescanner.js" name="OwnPassBarcodeScanner">
+        <clobbers target="cordova.plugins.ownPassBarcodeScanner" />
     </js-module>
 
     <!-- ios -->
     <platform name="ios">
         <!-- Cordova >= 2.8 -->
         <config-file target="config.xml" parent="/*">
-            <feature name="BarcodeScanner">
+            <feature name="OwnPassBarcodeScanner">
                 <param name="ios-package" value="CDVBarcodeScanner" />
             </feature>
         </config-file>

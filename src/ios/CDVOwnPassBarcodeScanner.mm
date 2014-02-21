@@ -23,7 +23,7 @@
 // Delegate to handle orientation functions
 // 
 //------------------------------------------------------------------------------
-@protocol CDVBarcodeScannerOrientationDelegate <NSObject>
+@protocol CDVOwnPassBarcodeScannerOrientationDelegate <NSObject>
 
 - (NSUInteger)supportedInterfaceOrientations;
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation;
@@ -44,7 +44,7 @@
 //------------------------------------------------------------------------------
 // plugin class
 //------------------------------------------------------------------------------
-@interface CDVBarcodeScanner : CDVPlugin {}
+@interface CDVOwnPassBarcodeScanner : CDVPlugin {}
 - (NSString*)isScanNotPossible;
 - (void)scan:(CDVInvokedUrlCommand*)command;
 - (void)encode:(CDVInvokedUrlCommand*)command;
@@ -56,7 +56,7 @@
 // class that does the grunt work
 //------------------------------------------------------------------------------
 @interface CDVbcsProcessor : NSObject <AVCaptureVideoDataOutputSampleBufferDelegate> {}
-@property (nonatomic, retain) CDVBarcodeScanner*           plugin;
+@property (nonatomic, retain) CDVOwnPassBarcodeScanner*           plugin;
 @property (nonatomic, retain) NSString*                   callback;
 @property (nonatomic, retain) UIViewController*           parentViewController;
 @property (nonatomic, retain) CDVbcsViewController*        viewController;
@@ -67,7 +67,7 @@
 @property (nonatomic)         BOOL                        is2D;
 @property (nonatomic)         BOOL                        capturing;
 
-- (id)initWithPlugin:(CDVBarcodeScanner*)plugin callback:(NSString*)callback parentViewController:(UIViewController*)parentViewController alterateOverlayXib:(NSString *)alternateXib;
+- (id)initWithPlugin:(CDVOwnPassBarcodeScanner*)plugin callback:(NSString*)callback parentViewController:(UIViewController*)parentViewController alterateOverlayXib:(NSString *)alternateXib;
 - (void)scanBarcode;
 - (void)barcodeScanSucceeded:(NSString*)text format:(NSString*)format;
 - (void)barcodeScanFailed:(NSString*)message;
@@ -85,7 +85,7 @@
 //------------------------------------------------------------------------------
 // view controller for the ui
 //------------------------------------------------------------------------------
-@interface CDVbcsViewController : UIViewController <CDVBarcodeScannerOrientationDelegate> {}
+@interface CDVbcsViewController : UIViewController <CDVOwnPassBarcodeScannerOrientationDelegate> {}
 @property (nonatomic, retain) CDVbcsProcessor*  processor;
 @property (nonatomic, retain) NSString*        alternateXib;
 @property (nonatomic)         BOOL             shutterPressed;
@@ -105,7 +105,7 @@
 //------------------------------------------------------------------------------
 // plugin class
 //------------------------------------------------------------------------------
-@implementation CDVBarcodeScanner
+@implementation CDVOwnPassBarcodeScanner
 
 //--------------------------------------------------------------------------
 - (NSString*)isScanNotPossible {
@@ -206,7 +206,7 @@
 @synthesize capturing            = _capturing;
 
 //--------------------------------------------------------------------------
-- (id)initWithPlugin:(CDVBarcodeScanner*)plugin
+- (id)initWithPlugin:(CDVOwnPassBarcodeScanner*)plugin
             callback:(NSString*)callback
 parentViewController:(UIViewController*)parentViewController
   alterateOverlayXib:(NSString *)alternateXib {
@@ -817,7 +817,7 @@ parentViewController:(UIViewController*)parentViewController
     return result;
 }
 
-#pragma mark CDVBarcodeScannerOrientationDelegate
+#pragma mark CDVOwnPassBarcodeScannerOrientationDelegate
 
 - (BOOL)shouldAutorotate
 {   

@@ -460,13 +460,13 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
       paint.setColor(getResources().getColor(fakeR.getId("color", "result_points")));
       if (points.length == 2) {
         paint.setStrokeWidth(4.0f);
-        drawLine(canvas, paint, points[0], points[1]);
+        //drawLine(canvas, paint, points[0], points[1]);
       } else if (points.length == 4 &&
                  (rawResult.getBarcodeFormat() == BarcodeFormat.UPC_A ||
                   rawResult.getBarcodeFormat() == BarcodeFormat.EAN_13)) {
         // Hacky special case -- draw two lines, for the barcode and metadata
-        drawLine(canvas, paint, points[0], points[1]);
-        drawLine(canvas, paint, points[2], points[3]);
+        //drawLine(canvas, paint, points[0], points[1]);
+        //drawLine(canvas, paint, points[2], points[3]);
       } else {
         paint.setStrokeWidth(10.0f);
         for (ResultPoint point : points) {

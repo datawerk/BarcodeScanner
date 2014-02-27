@@ -58,6 +58,7 @@
 /Users/fp/BarcodeScanner/src/android/LibraryProject/res/values-tr/strings.xml \
 /Users/fp/BarcodeScanner/src/android/LibraryProject/res/values-zh-rCN/strings.xml \
 /Users/fp/BarcodeScanner/src/android/LibraryProject/res/values-zh-rTW/strings.xml \
+/Users/fp/BarcodeScanner/src/android/LibraryProject/res/xml/op_preferences.xml \
 /Users/fp/BarcodeScanner/src/android/LibraryProject/res/xml/preferences.xml \
 /Users/fp/BarcodeScanner/src/android/LibraryProject/bin/res/drawable/launcher_icon.png \
 /Users/fp/BarcodeScanner/src/android/LibraryProject/bin/res/drawable/share_via_barcode.png \

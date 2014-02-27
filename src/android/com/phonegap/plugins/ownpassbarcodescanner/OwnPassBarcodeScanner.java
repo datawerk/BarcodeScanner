@@ -26,7 +26,7 @@ import org.apache.cordova.PluginResult;
  * @sa https://github.com/apache/cordova-android/blob/master/framework/src/org/apache/cordova/CordovaPlugin.java
  */
 public class OwnPassBarcodeScanner extends CordovaPlugin {
-    public static final int REQUEST_CODE = 0x0ba7c0de;
+    public static final int REQUEST_CODE = 0x0ba7c0df;
 
     private static final String SCAN = "scan";
     private static final String ENCODE = "encode";

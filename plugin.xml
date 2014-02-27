@@ -41,7 +41,7 @@
     <!-- android -->
     <platform name="android">
 
-        <source-file src="src/android/com/phonegap/plugins/ownpassbarcodescanner/BarcodeScanner.java" target-dir="src/com/phonegap/plugins/ownpassbarcodescanner" />
+        <source-file src="src/android/com/phonegap/plugins/ownpassbarcodescanner/OwnPassBarcodeScanner.java" target-dir="src/com/phonegap/plugins/ownpassbarcodescanner" />
         <!--
         <source-file src="R.java" target-dir="src/com/google/zxing/client/android" />
         -->
@@ -54,14 +54,14 @@
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="OwnPassBarcodeScanner">
-                <param name="android-package" value="com.phonegap.plugins.ownpassbarcodescanner.BarcodeScanner" />
+                <param name="android-package" value="com.phonegap.plugins.ownpassbarcodescanner.OwnPassBarcodeScanner" />
             </feature>
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <activity
                 android:name="com.google.zxing.client.android.CaptureActivity"
-                android:screenOrientation="landscape"
+                android:screenOrientation="portrait"
                 android:clearTaskOnLaunch="true"
                 android:configChanges="orientation|keyboardHidden"
                 android:theme="@android:style/Theme.NoTitleBar.Fullscreen"

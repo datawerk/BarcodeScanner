@@ -25,7 +25,7 @@ import org.apache.cordova.PluginResult;
  *
  * @sa https://github.com/apache/cordova-android/blob/master/framework/src/org/apache/cordova/CordovaPlugin.java
  */
-public class BarcodeScanner extends CordovaPlugin {
+public class OwnPassBarcodeScanner extends CordovaPlugin {
     public static final int REQUEST_CODE = 0x0ba7c0de;
 
     private static final String SCAN = "scan";
@@ -44,14 +44,14 @@ public class BarcodeScanner extends CordovaPlugin {
     private static final String PHONE_TYPE = "PHONE_TYPE";
     private static final String SMS_TYPE = "SMS_TYPE";
 
-    private static final String LOG_TAG = "BarcodeScanner";
+    private static final String LOG_TAG = "OwnPassBarcodeScanner";
 
     private CallbackContext callbackContext;
 
     /**
      * Constructor.
      */
-    public BarcodeScanner() {
+    public OwnPassBarcodeScanner() {
     }
 
     /**

@@ -11,6 +11,7 @@
 /Users/fp/BarcodeScanner/src/android/LibraryProject/res/layout/encode.xml \
 /Users/fp/BarcodeScanner/src/android/LibraryProject/res/layout/help.xml \
 /Users/fp/BarcodeScanner/src/android/LibraryProject/res/layout/history_list_item.xml \
+/Users/fp/BarcodeScanner/src/android/LibraryProject/res/layout/op_capture.xml \
 /Users/fp/BarcodeScanner/src/android/LibraryProject/res/layout/search_book_contents.xml \
 /Users/fp/BarcodeScanner/src/android/LibraryProject/res/layout/search_book_contents_header.xml \
 /Users/fp/BarcodeScanner/src/android/LibraryProject/res/layout/search_book_contents_list_item.xml \
@@ -18,6 +19,7 @@
 /Users/fp/BarcodeScanner/src/android/LibraryProject/res/layout-land/encode.xml \
 /Users/fp/BarcodeScanner/src/android/LibraryProject/res/layout-land/share.xml \
 /Users/fp/BarcodeScanner/src/android/LibraryProject/res/layout-ldpi/capture.xml \
+/Users/fp/BarcodeScanner/src/android/LibraryProject/res/layout-ldpi/op_capture.xml \
 /Users/fp/BarcodeScanner/src/android/LibraryProject/res/menu/capture.xml \
 /Users/fp/BarcodeScanner/src/android/LibraryProject/res/menu/encode.xml \
 /Users/fp/BarcodeScanner/src/android/LibraryProject/res/menu/history.xml \
@@ -57,4 +59,11 @@
 /Users/fp/BarcodeScanner/src/android/LibraryProject/res/values-zh-rCN/strings.xml \
 /Users/fp/BarcodeScanner/src/android/LibraryProject/res/values-zh-rTW/strings.xml \
 /Users/fp/BarcodeScanner/src/android/LibraryProject/res/xml/preferences.xml \
+/Users/fp/BarcodeScanner/src/android/LibraryProject/bin/res/drawable/launcher_icon.png \
+/Users/fp/BarcodeScanner/src/android/LibraryProject/bin/res/drawable/share_via_barcode.png \
+/Users/fp/BarcodeScanner/src/android/LibraryProject/bin/res/drawable/shopper_icon.png \
+/Users/fp/BarcodeScanner/src/android/LibraryProject/bin/res/drawable-hdpi/launcher_icon.png \
+/Users/fp/BarcodeScanner/src/android/LibraryProject/bin/res/drawable-hdpi/shopper_icon.png \
+/Users/fp/BarcodeScanner/src/android/LibraryProject/bin/res/drawable-xhdpi/launcher_icon.png \
+/Users/fp/BarcodeScanner/src/android/LibraryProject/bin/res/drawable-xxhdpi/launcher_icon.png \
 /Users/fp/BarcodeScanner/src/android/LibraryProject/bin/AndroidManifest.xml \

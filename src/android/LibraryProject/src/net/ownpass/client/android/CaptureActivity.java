@@ -145,7 +145,7 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
 
     Window window = getWindow();
     window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-    setContentView(fakeR.getId("layout", "capture"));
+    setContentView(fakeR.getId("layout", "op_capture"));
 
     hasSurface = false;
     historyManager = new HistoryManager(this);

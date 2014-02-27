@@ -74,7 +74,7 @@
             </activity>
             <activity android:name="net.ownpass.client.android.encode.EncodeActivity" android:label="@string/share_name">
                 <intent-filter>
-                    <action android:name="com.phonegap.plugins.barcodescanner.ENCODE"/>
+                    <action android:name="com.phonegap.plugins.ownpass.ENCODE"/>
                     <category android:name="android.intent.category.DEFAULT"/>
                 </intent-filter>
             </activity>

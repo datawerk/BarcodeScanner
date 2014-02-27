@@ -41,9 +41,9 @@
     <!-- android -->
     <platform name="android">
 
-        <!--<source-file src="src/android/com/phonegap/plugins/ownpassbarcodescanner/OwnPassBarcodeScanner.java" target-dir="src/com/phonegap/plugins/ownpassbarcodescanner" />-->
+        <source-file src="src/android/com/phonegap/plugins/ownpass/OwnPassBarcodeScanner.java" target-dir="src/com/phonegap/plugins/ownpass" />
         <!--
-        <source-file src="R.java" target-dir="src/com/google/zxing/client/android" />
+        <!--<source-file src="R.java" target-dir="src/com/google/zxing/client/android" />
         -->
         
         <!--
@@ -54,31 +54,31 @@
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="OwnPassBarcodeScanner">
-                <param name="android-package" value="com.phonegap.plugins.barcodescanner.BarcodeScanner" />
+                <param name="android-package" value="com.phonegap.plugins.ownpass.OwnPassBarcodeScanner" />
             </feature>
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <activity
-                android:name="com.google.zxing.client.android.CaptureActivity"
+                android:name="net.ownpass.client.android.CaptureActivity"
                 android:screenOrientation="portrait"
                 android:clearTaskOnLaunch="true"
-                android:configChanges="keyboardHidden"
+                android:configChanges="orientation|keyboardHidden"
                 android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-                android:windowSoftInputMode="stateVisible"
+                android:windowSoftInputMode="stateAlwaysHidden"
                 android:exported="false">
                 <intent-filter>
-                    <action android:name="com.phonegap.plugins.barcodescanner.SCAN"/>
+                    <action android:name="com.phonegap.plugins.ownpass.SCAN"/>
                     <category android:name="android.intent.category.DEFAULT"/>
                 </intent-filter>
             </activity>
-            <activity android:name="com.google.zxing.client.android.encode.EncodeActivity" android:label="@string/share_name">
+            <activity android:name="net.ownpass.client.android.encode.EncodeActivity" android:label="@string/share_name">
                 <intent-filter>
                     <action android:name="com.phonegap.plugins.barcodescanner.ENCODE"/>
                     <category android:name="android.intent.category.DEFAULT"/>
                 </intent-filter>
             </activity>
-            <activity android:name="com.google.zxing.client.android.HelpActivity" android:label="@string/share_name">
+            <activity android:name="net.ownpass.client.android.HelpActivity" android:label="@string/share_name">
                 <intent-filter>
                     <action android:name="android.intent.action.VIEW"/>
                     <category android:name="android.intent.category.DEFAULT"/>
@@ -93,7 +93,7 @@
             <uses-feature android:name="android.hardware.camera" android:required="false" />
         </config-file>
 
-        <!--<source-file src="src/android/com.google.zxing.client.android.ownpasscaptureactivity.jar" target-dir="libs"/>-->
+        <source-file src="src/android/net.ownpass.client.android.captureactivity.jar" target-dir="libs"/>
 
         <!--
             LibraryProject/res/*.*

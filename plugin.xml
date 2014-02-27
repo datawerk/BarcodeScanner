@@ -101,6 +101,9 @@
             replace: <source-file src="$1" target-dir="$2"/>
         -->
         
+        <source-file src="src/android/LibraryProject/res/layout-ldpi/capture.xml" target-dir="res/layout-ldpi"/>
+        <source-file src="src/android/LibraryProject/res/layout/capture.xml" target-dir="res/layout"/>
+        
         <!--<source-file src="src/android/LibraryProject/res/drawable/launcher_icon.png" target-dir="res/drawable"/>
         <source-file src="src/android/LibraryProject/res/drawable/share_via_barcode.png" target-dir="res/drawable"/>
         <source-file src="src/android/LibraryProject/res/drawable/shopper_icon.png" target-dir="res/drawable"/>

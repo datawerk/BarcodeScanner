@@ -453,13 +453,13 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
    * @param rawResult The decoded results which contains the points to draw.
    */
   private void drawResultPoints(Bitmap barcode, Result rawResult) {
-    ResultPoint[] points = rawResult.getResultPoints();
+    /*ResultPoint[] points = rawResult.getResultPoints();
     if (points != null && points.length > 0) {
       Canvas canvas = new Canvas(barcode);
       Paint paint = new Paint();
       paint.setColor(getResources().getColor(fakeR.getId("color", "result_points")));
       if (points.length == 2) {
-        paint.setStrokeWidth(4.0f);
+        //paint.setStrokeWidth(4.0f);
         //drawLine(canvas, paint, points[0], points[1]);
       } else if (points.length == 4 &&
                  (rawResult.getBarcodeFormat() == BarcodeFormat.UPC_A ||
@@ -473,7 +473,7 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
           canvas.drawPoint(point.getX(), point.getY(), paint);
         }
       }
-    }
+    }*/
   }
 
   private static void drawLine(Canvas canvas, Paint paint, ResultPoint a, ResultPoint b) {

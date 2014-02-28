@@ -62,7 +62,7 @@
             <activity
                 android:name="net.ownpass.client.android.CaptureActivity"
                 android:screenOrientation="portrait"
-                android:clearTaskOnLaunch="true"
+                android:clearTaskOnLaunch="false"
                 android:configChanges="orientation|keyboardHidden"
                 android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
                 android:windowSoftInputMode="stateAlwaysHidden"

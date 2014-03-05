@@ -237,7 +237,6 @@ parentViewController:(UIViewController*)parentViewController
     
     self.capturing = NO;
     
-    [super dealloc];
 }
 
 //--------------------------------------------------------------------------
@@ -275,7 +274,7 @@ parentViewController:(UIViewController*)parentViewController
     self.viewController = nil;
     
     // delayed [self release];
-    [self performSelector:@selector(release) withObject:nil afterDelay:1];
+    //[self performSelector:@selector(release) withObject:nil afterDelay:1];
 }
 
 //--------------------------------------------------------------------------
@@ -624,8 +623,7 @@ parentViewController:(UIViewController*)parentViewController
     self.processor = nil;
     self.shutterPressed = NO;
     self.alternateXib = nil;
-    self.overlayView = nil;      
-    [super dealloc];
+    self.overlayView = nil;
 }
 
 //--------------------------------------------------------------------------
